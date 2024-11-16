@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'gwin';
+    src: url(./GwenRegular.ttf);
+}
+@font-face {
+    font-family: 'phen';
+    src: url(./PhenR.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffff;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(312deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+h3{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    color: #000000;
+    font-family: phen;
+    letter-spacing: 1px;
+}
+.container > h1{
+    font-family: gwin;
+    font-weight: lighter;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    background-image: url(./gradient-image.svg);
+    border-radius: 10px 10px 0 0 ;
+    border: 1px solid rgb(65, 2, 87);
+}
+.container > p{
+    font-style: italic;
+}
+.btnG > button{
+    height: 30px;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgb(255, 174, 22),rgb(255, 255, 66));
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 150ms ease;
+    font-family: sans-serif;
+}
+.btnG > button:hover{
+    height: 35px;
+    box-shadow: 0 0 10px orange;
+}
+.btnG > button:active{
+    scale: 0.9;
+}
+.btnG{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 400px;
+    background-image: url(./gradient-image.svg);
+    background-position-x: left;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}
